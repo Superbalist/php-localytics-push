@@ -15,6 +15,12 @@ A PHP client for sending push notifications via the [Localytics Push Notificatio
 composer require superbalist/php-localytics-push
 ```
 
+## Integrations
+
+Want to get started quickly? Check out some of these integrations:
+
+* Laravel - https://github.com/Superbalist/laravel-localytics-push
+
 ## Usage
 
 ```php
