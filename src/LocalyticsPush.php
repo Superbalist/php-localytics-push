@@ -55,6 +55,7 @@ class LocalyticsPush
     {
         $this->uri = $uri;
     }
+
     /**
      * Return the uri.
      *
@@ -138,8 +139,10 @@ class LocalyticsPush
      * Send an HTTP request.
      *
      * @param RequestInterface $request
-     * @return array
+     *
      * @throws \Exception
+     *
+     * @return array
      */
     protected function sendRequest(RequestInterface $request)
     {
@@ -154,6 +157,7 @@ class LocalyticsPush
      * @param array $messages
      * @param string $requestId
      * @param string $campaignKey
+     *
      * @return array
      */
     public function pushMessages($targetType, array $messages, $requestId = null, $campaignKey = null)
@@ -210,6 +214,7 @@ class LocalyticsPush
      * @param array $message
      * @param string $requestId
      * @param string $campaignKey
+     *
      * @return array
      */
     public function pushMessage($targetType, array $message, $requestId = null, $campaignKey = null)

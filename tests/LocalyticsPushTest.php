@@ -77,8 +77,8 @@ class LocalyticsPushTest extends TestCase
                                                 'op' => 'in',
                                                 'values' => [
                                                     'matthew@superbalist.com',
-                                                ]
-                                            ]
+                                                ],
+                                            ],
                                         ],
                                         'op' => 'and',
                                     ],
@@ -86,8 +86,8 @@ class LocalyticsPushTest extends TestCase
                                 'alert' => [
                                     'title' => 'Message Title',
                                     'body' => 'This is my message content!',
-                                ]
-                            ]
+                                ],
+                            ],
                         ],
                     ],
                 ],
@@ -108,8 +108,8 @@ class LocalyticsPushTest extends TestCase
                                 'op' => 'in',
                                 'values' => [
                                     'matthew@superbalist.com',
-                                ]
-                            ]
+                                ],
+                            ],
                         ],
                         'op' => 'and',
                     ],
@@ -117,7 +117,7 @@ class LocalyticsPushTest extends TestCase
                 'alert' => [
                     'title' => 'Message Title',
                     'body' => 'This is my message content!',
-                ]
+                ],
             ],
         ];
         $response = $localytics->pushMessages('profile', $messages, 'request-id', 'campaign-key');
@@ -155,8 +155,8 @@ class LocalyticsPushTest extends TestCase
                                                 'op' => 'in',
                                                 'values' => [
                                                     'matthew@superbalist.com',
-                                                ]
-                                            ]
+                                                ],
+                                            ],
                                         ],
                                         'op' => 'and',
                                     ],
@@ -164,8 +164,8 @@ class LocalyticsPushTest extends TestCase
                                 'alert' => [
                                     'title' => 'Message Title',
                                     'body' => 'This is my message content!',
-                                ]
-                            ]
+                                ],
+                            ],
                         ],
                     ],
                 ],
@@ -185,8 +185,8 @@ class LocalyticsPushTest extends TestCase
                             'op' => 'in',
                             'values' => [
                                 'matthew@superbalist.com',
-                            ]
-                        ]
+                            ],
+                        ],
                     ],
                     'op' => 'and',
                 ],
@@ -194,7 +194,7 @@ class LocalyticsPushTest extends TestCase
             'alert' => [
                 'title' => 'Message Title',
                 'body' => 'This is my message content!',
-            ]
+            ],
         ];
         $response = $localytics->pushMessage('profile', $message, 'request-id', 'campaign-key');
         $this->assertEquals(['message' => 'Queued for delivery'], $response);
